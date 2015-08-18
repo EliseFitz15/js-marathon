@@ -25,7 +25,7 @@ ship = {
     console.log("Fuel level now at " + this.propulsion.fuel);
   },
   takeoff: function(){
-    ship.propulsion.fire;
+    this.propulsion.fire;
     console.log("pshooooooooo!!!!");
   }
 };
@@ -64,7 +64,7 @@ countdown = function(num, ship){
       console.log(num);
       countdown(num - 1, ship);
     }, 1000);
-  }else{
+  } else {
     console.log("Blastoff!!");
     ship.takeoff();
   };
